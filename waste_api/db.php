@@ -1,15 +1,16 @@
 <?php
 
-$host = "mysql.railway.internal";
-$user = "root";
-$password = "ujnGbbeqhPLavFRtaSKxcjPVqMBmSSEM";
-$database = "railway";
-$port = "3306";
+$host = "sql300.infinityfree.com";
+$user = "if0_41863641";
+$password = "Akdiamond123";
+$database = "if0_41863641_waste_report_db";
 
-$conn = new mysqli($host, $user, $password, $database, $port);
+$conn = new mysqli($host, $user, $password, $database);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+
+$conn->set_charset("utf8");
 
 ?>
